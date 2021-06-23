@@ -14,7 +14,7 @@ spec:
         app: test-project
     spec:
       containers:
-      - image: registry.gitlab.com/mathieu.chauvet.adaztech/test-project:latest
+      - image: registry.gitlab.com/mathieu.chauvet.adaztech/test-project:master-90031ad20de31fd8530b0ebf03f79d1bc8ae2753
         name: test-project
         ports:
         - containerPort: 8080
