@@ -18,3 +18,5 @@ spec:
         name: test-project
         ports:
         - containerPort: 8080
+      imagePullSecrets: 
+      - name: registry-credentials
