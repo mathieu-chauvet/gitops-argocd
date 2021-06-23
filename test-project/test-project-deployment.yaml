@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-project
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: test-project
+  template:
+    metadata:
+      labels:
+        app: test-project
+    spec:
+      containers:
+      - image: registry.gitlab.com/mathieu.chauvet.adaztech/test-project:latest
+        name: test-project
+        ports:
+        - containerPort: 8080
